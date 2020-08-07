@@ -1,0 +1,12 @@
+html, body, #root {
+  height: 100%;
+}
+
+#root {
+  margin-top: 60px;
+}
+
+footer {
+  background-color: transparent;
+  padding:30px 0px;
+}	       

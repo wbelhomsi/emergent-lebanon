@@ -1,0 +1,51 @@
+.toasts-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+  max-width: 380px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.toast-container.do-style > * {
+  background-color: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(0,0,0,.1);
+  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.1);
+  backdrop-filter: blur(10px);
+  border-radius: .25rem;
+  font-size: .875rem;
+  margin-top: 5px;
+}
+.toast-container.do-style > .variant-primary {
+  background-color: rgba(63, 120, 180, 0.85);
+  color: white;
+}
+.toast-container.do-style > .variant-info {
+  background-color: rgba(23, 162, 184, 0.85);
+  color: white;
+}
+.toast-container.do-style > .variant-danger {
+  background-color: rgba(220, 53, 69, 0.85);
+  color: white;
+}
+
+.toast-container {
+  margin-top: 0px;
+  transition-duration: 300ms;
+  background-color: transparent;
+  overflow: hidden;
+}
+.toast-container > * {
+  transition-duration: 300ms;
+  transform-origin: top center;
+  transform: scale(1);
+  padding: 10px 15px;
+}
+.toast-container.hide {
+  margin-top: -5px;
+  overflow: visible;
+}
+.toast-container.hide > * {
+  transform: scale(0);
+}
