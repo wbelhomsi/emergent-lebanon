@@ -5,6 +5,7 @@ import { Container, Card, Row, Col } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import Loader from '../loader/loader.component';
 import GoogleMap from '../google-map/google-map.component';
+import { CircleComponent } from '../util-components/util-components.component';
 
 const ExplorePage = () => {
   const dispatch = useDispatch();
@@ -19,6 +20,8 @@ const ExplorePage = () => {
     <>
       <CustomNavBar />
       <div className="container" >
+        <CircleComponent text={"First Circle"} />
+        <CircleComponent text={"Second Circle Testttttttttttttttt"} />
         <GoogleMap markers={markersArr} />
       </div>
     </>
