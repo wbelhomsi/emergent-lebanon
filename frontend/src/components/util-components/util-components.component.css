@@ -1,3 +1,15 @@
+p {
+  font-size: 1.2rem;
+  color: var(--main-text-color);
+  letter-spacing: 0rem;
+  background-size: cover;
+  font-family: 'Open Sans';
+  font-size: 1rem;
+  font-kerning: normal;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
 .circle-button {
   background: 0 0;
   border: 0;
@@ -5,8 +17,8 @@
   padding-bottom: 0;
   padding-top: 0;
   text-align: center;
-  width: 84px;
-  height: 84px;
+  width: 104px;
+  height: 104px;
 }
 
 .circle-outer {
@@ -15,16 +27,44 @@
   display: block;
   flex: none;
   justify-content: center;
+  position: relative;
 }
 
 .cirlce-inner {
-  width: 76px;
-  height: 76px;
-  background-color: #fafafa;
+  width: 96px;
+  height: 96px;
+  background-color: var(--emerge-green-color);
   border-radius: 50%;
   box-sizing: border-box;
   display: block;
   flex: 0 0 auto;
   overflow: hidden;
   position: relative;
+  outline:none;
+  border: none;
+}
+.cirlce-inner:hover {
+  background-color: var(--emerge-blue-color);
+}
+
+.circle-border {
+  border-style: solid;
+  border-color: var(--emerge-red-color);
+  border-width: 5px;
+}
+.hidden {
+  display: none;
+}
+
+.coordinatedby {
+  margin-top: 0px;
+  color: white;
+  line-height: 0.2rem;
+  font-size: 5px;
+}
+
+.coordinatedby_text {
+  color: var(--emerge-beigelight-color);
+  font-size: 7px;
+  margin-top: -2px;
 }

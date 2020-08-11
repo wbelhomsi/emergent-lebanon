@@ -7,8 +7,35 @@ import Loader from '../loader/loader.component';
 import GoogleMap from '../google-map/google-map.component';
 import { CircleComponent } from '../util-components/util-components.component';
 
+const CircleArray = ({ array, selectedFilter, setSelectedFilter}) => {
+  return array.map((circleComp) => {
+    return (
+      <CircleComponent
+        title={circleComp.title}
+        coordinatedByText= {circleComp.coordinatedByText}
+        selected={selectedFilter === circleComp.id}
+        onClick={() => setSelectedFilter(circleComp.id)}
+      />
+    )
+  })
+}
+
 const ExplorePage = () => {
   const dispatch = useDispatch();
+  const [selectedFilter, setSelectedFilter] = useState(-1);
+  const highlightBarCircles = [{
+    id: 1,
+    title: 'GROUND RELIEF',
+    coordinatedByText: 'Muwatin Lebnene'
+  }, {
+    id: 2,
+    title: 'DONATE FUNDS',
+    coordinatedByText: 'Coordinator Name'
+  }, {
+    id: 3,
+    title: 'DONATE TIME',
+    coordinatedByText: 'The Volunteer Circle'
+  }]
   const markersArr= [{
     lat: 33.7,
     lng: 35.7
@@ -20,8 +47,9 @@ const ExplorePage = () => {
     <>
       <CustomNavBar />
       <div className="container" >
-        <CircleComponent text={"First Circle"} />
-        <CircleComponent text={"Second Circle Testttttttttttttttt"} />
+        <CircleArray array={highlightBarCircles} selectedFilter={selectedFilter} setSelectedFilter={setSelectedFilter} />
+        {/* <CircleComponent text={"First Circle"} selected={selectedFilter === 1} /> */}
+        {/* <CircleComponent text={"Second Circle Testttttttttttttttt"} selected={selectedFilter === 1} /> */}
         <GoogleMap markers={markersArr} />
       </div>
     </>
