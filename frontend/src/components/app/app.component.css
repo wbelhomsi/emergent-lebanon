@@ -1,4 +1,71 @@
-html, body, #root {
+:root {
+  --main-bg-color: #ffffff;
+  --main-text-color: black;
+  --secondary-bg-color: #f5f2ed;
+  --secondary-text-color: #5d6d5d;
+  --tertiary-text-color: #838b83;
+  --inverted-text-color: white;
+  --btn-bg-color: #b2d3b5;
+  --btn-text-color: #083808;
+  --btn-hoverbg-color: #a6deb1;
+  --btn-hovertext-color: white;
+  --btn-disabledbg-color: #e2c2c2;
+  --btn-disabledtext-color: #717171;
+  --link-text-color: #ff0000;
+  --link-hover-color: black;
+  --waste-light-color: red;
+  --waste-main-color: red;
+  --human-light2-color: red;
+  --human-light-color: red;
+  --human-main-color: red;
+  --earth-light-color: red;
+  --earth-main-color: red;
+  --water-light-color: red;
+  --water-main-color: red;
+  --air-light-color: red;
+  --air-main-color: red;
+  --energy-light-color: red;
+  --energy-main-color: red;
+  --mobility-light-color: red;
+  --mobility-main-color: red;
+  --culture-light-color: red;
+  --culture-main-color: red;
+  --economy-light-color: red;
+  --economy-main-color: red;
+  --default-hover-color: red;
+  --input-bg-color: white; /*rgb(248, 248, 248)*/
+  --nav-bg-color: white;
+  --nav-btntext-color: #ff0000;
+  --nav-btnbg-color: #ff0000;
+  --nav-linkhover-color: #ddd;
+  --nav-linkactive-color: #ffffff;
+  --nav-linkhovertext-color: black;
+  --nav-linkactivetext-color: #4a4a4a;
+  --landingpage-btn-bg-color: #083808;
+  --landingpage-btn-text-color: white;
+  --landingpage-btn-hoverbg-color: #a7dbb1;
+  --landingpage-btn-hovertext-color: #083808;
+  --landingpage-text-color: #083808;
+  --landingpage-background-color: rgba(255, 255, 255, 0);
+  --landingpage-containerbg-color: rgba(255, 255, 255, 0.53);
+  --modal-containerbg-color: rgba(187, 221, 187, 0.71);
+  --modal-contentbg-color: #f5f2ed;
+  --modal-contentbg-light-color: #fcf8f5;
+  --error-text-color: #b964a1;
+  --sidebar-bg-color: rgb(242, 242, 242);
+  --focus-bg-color: #cfedd8;
+  --popup-bg-color: rgb(187, 221, 187);
+  --emerge-green-color: #c1d6ce;
+  --emerge-blue-color: #b8ddf4;
+  --emerge-red-color: #ff0000;
+  --emerge-beige-color: #eae7e2;
+  --emerge-beigelight-color: #faf9f6;
+  --emerge-grey-color: #d4d4d4;
+}
+
+html,
+body,
+#root {
   height: 100%;
 }
 
@@ -8,5 +75,5 @@ html, body, #root {
 
 footer {
   background-color: transparent;
-  padding:30px 0px;
-}	       
+  padding: 30px 0px;
+}
