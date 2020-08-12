@@ -1,0 +1,51 @@
+#############
+
+
+# use latest Node LTS slim image
+FROM node:lts-slim AS firebase-builder
+
+# set user to avoid permission issues
+# (see https://github.com/nodejs/node-gyp/issues/1236)
+USER node
+RUN mkdir /home/node/.npm-global
+ENV PATH=/home/node/.npm-global/bin:$PATH
+ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
+
+# install Firebase CLI
+RUN npm install -g firebase-tools
+
+RUN firebase init
+CMD firebase serve --host 0.0.0.0
+
+
+############
+
+
+# use latest Node LTS slim image
+FROM node:lts-slim AS npm-builder
+USER root
+WORKDIR /usr/src/emergent-beirut
+
+# install gulp (does not work from local npm install yet)
+RUN npm install -g gulp
+
+# install node packages
+COPY package.json .
+COPY frontend/package.json frontend/
+RUN npm install && \
+    cd frontend/ && \
+    npm install
+
+
+############
+
+
+FROM npm-builder AS emergent-beirut
+WORKDIR /usr/src/emergent-beirut
+
+# Copy source code
+COPY . .
+
+# Start server
+EXPOSE 3000
+ENTRYPOINT [ "gulp", "run:frontend" ]
