@@ -42,4 +42,18 @@ Data:
   - We aim to evolve the filter flow on the app along with the evolution of the action on the ground. Therefore we'd like to design it to be as dynamic as possible, using a reference dictionary json object.
   - We'll also have an arabic version of the app (could also be done through a dictionary)
   - In order to limit the number of writes and reads, we aggregate the data of the various pins (initially each in a single document) to a compbined document that groups several pins into one through a key-value pair logic (key being the document's ID and value being all the key-value pair dataset)
+
+  Running the project:
+
+ Pre-requisite: NodeJS Installed
+
+ Use command lines in your terminal:
+
+  1. Navigate to "emergent-lebanon" directory
+  2. Execute "npm i"
+  3. Navigate to "frontend" directory (cd frontend)
+  4. Execute "npm i"
+  5. Execute "npm run start"
+
+ Your browser should open and display the UI.
  
