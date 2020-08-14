@@ -8,19 +8,17 @@ import TakeActionPage from '../take-action-page/take-action-page.component';
 import LibraryPage from '../library-page/library-page.component';
 
 const AppComponent = () => {
- 
   const { page } = useSelector((state) => state.router.routerState);
-  
+
   return (
     <>
       { page === 'explore' ? <ExplorePage /> : null }
       { page === 'about' ? <AboutPage /> : null }
       { page === 'take-action' ? <TakeActionPage /> : null }
       { page === 'library' ? <LibraryPage /> : null }
-      <footer></footer>
+      <footer />
     </>
   );
-
 };
 
 export default AppComponent;
