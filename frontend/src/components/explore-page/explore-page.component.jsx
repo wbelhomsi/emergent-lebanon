@@ -18,22 +18,24 @@ const CircleArray = ({
 const ExplorePage = () => {
   const [selectedFilter, setSelectedFilter] = useState(-1);
   const highlightBarCircles = [{
-    id: 1,
+    id: 0,
     title: 'GROUND RELIEF',
     coordinatedByText: 'Muwatin Lebnene',
   }, {
-    id: 2,
+    id: 1,
     title: 'DONATE FUNDS',
     coordinatedByText: 'Coordinator Name',
   }, {
-    id: 3,
+    id: 2,
     title: 'DONATE TIME',
     coordinatedByText: 'The Volunteer Circle',
   }];
   const markersArr = [{
+    id: 0,
     lat: 33.7,
     lng: 35.7,
   }, {
+    id: 1,
     lat: 33.5,
     lng: 35.5,
   }];

@@ -1,0 +1,104 @@
+.map-marker {
+  height: 10px;
+  width: 10px;
+  overflow: visible;
+  outline: none;
+}
+
+.marker-content {
+  background-color: white;
+  opacity: 0.75;
+  border: "5px solid";
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  padding: 2px;
+}
+
+.marker-title {
+  font-size: 18px;
+}
+
+.marker-text {
+  font-size: 12px;
+}
+
+.pin {
+  height: 10px;
+  width: 10px;
+  border-radius: 20px;
+  padding: 4;
+  cursor: pointer;
+}
+
+.marker-content {
+  padding-right: 0px;
+  padding-bottom: 0px;
+  max-width: 300px;
+  max-height: 1081px;
+  min-width: 0px;
+}
+
+.close-button {
+  background: none;
+  display: block;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  cursor: pointer;
+  user-select: none;
+  top: -6px;
+  right: -6px;
+  width: 30px;
+  height: 30px;
+}
+
+.gm-style .gm-style-iw-c {
+  position: absolute;
+  box-sizing: border-box;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  transform: translate(-50%,-100%);
+  background-color: var(--emerge-while-color);
+  opacity: 0.85;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 7px 1px rgba(0,0,0,0.3);
+}
+
+.gm-style .gm-style-iw {
+  font-weight: 300;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+.gm-style .gm-style-iw-d {
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.gm-style .gm-style-iw-t::after {
+  background: var(--emerge-while-color);
+  opacity: 0.75;
+  box-shadow: -2px 2px 2px 0 rgba(178,178,178,.4);
+  content: "";
+  height: 15px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%,-50%) rotate(-45deg);
+  width: 15px;
+}
+
+.gm-style-iw-t {
+  position: absolute;
+  right: 0px; bottom: 21px;
+}
+
+.gm-style-iw-a {
+  position: absolute; left: 4px; top: 8px;
+}
