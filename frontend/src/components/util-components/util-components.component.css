@@ -48,7 +48,6 @@ p {
   background-color: var(--emerge-red-color);
 }
 
-
 .circle-border {
   border-style: solid;
   background-color: var(--emerge-red-color);
@@ -61,7 +60,7 @@ p {
 .circle-border {
   border-style: solid;
   border-color: var(--emerge-red-color);
-  border-width: 5px;
+  border-width: 0px;
 }
 .hidden {
   display: none;
@@ -76,6 +75,7 @@ p {
 
 .coordinatedby_text {
   color: var(--emerge-beigelight-color);
-  font-size: 7px;
+  font-size: 5px;
   margin-top: -2px;
 }
+
