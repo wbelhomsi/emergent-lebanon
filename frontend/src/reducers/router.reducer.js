@@ -8,10 +8,12 @@ const router = (state = {
 }, action) => {
   switch (action.type) {
     case CHANGED_ROUTER_STATE:
-      return Object.assign({}, state, { isInitialised: (state.isInitialised || action.isInit), routerState: action.state, position: state.position, count: state.count + 1 });
+      return {
+        ...state, isInitialised: (state.isInitialised || action.isInit), routerState: action.state, position: state.position, count: state.count + 1,
+      };
     default:
       return state;
   }
-}
+};
 
 export default router;
