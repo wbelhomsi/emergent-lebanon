@@ -13,5 +13,5 @@ ReactDOM.render(
     <AppComponent />
     <ToastsComponent />
   </Provider>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );

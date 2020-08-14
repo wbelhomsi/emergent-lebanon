@@ -1,4 +1,4 @@
 const config = {
-  GOOGLE_API_KEY: ''
+  GOOGLE_API_KEY: '',
 };
 export default config;
