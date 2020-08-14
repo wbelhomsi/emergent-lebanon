@@ -3,7 +3,7 @@ p {
   color: var(--main-text-color);
   letter-spacing: 0rem;
   background-size: cover;
-  font-family: 'Open Sans';
+  font-family: 'Verdana';
   font-size: 1rem;
   font-kerning: normal;
   margin-bottom: 5px;
@@ -43,8 +43,19 @@ p {
   outline:none;
   border: none;
 }
+
 .cirlce-inner:hover {
-  background-color: var(--emerge-blue-color);
+  background-color: var(--emerge-red-color);
+}
+
+
+.circle-border {
+  border-style: solid;
+  background-color: var(--emerge-red-color);
+  border-width: 5px;
+}
+.hidden {
+  display: none;
 }
 
 .circle-border {

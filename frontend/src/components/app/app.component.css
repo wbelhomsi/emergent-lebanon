@@ -1,6 +1,6 @@
 :root {
   --main-bg-color: #ffffff;
-  --main-text-color: black;
+  --main-text-color: white;
   --secondary-bg-color: #f5f2ed;
   --secondary-text-color: #5d6d5d;
   --tertiary-text-color: #838b83;
@@ -55,9 +55,12 @@
   --sidebar-bg-color: rgb(242, 242, 242);
   --focus-bg-color: #cfedd8;
   --popup-bg-color: rgb(187, 221, 187);
-  --emerge-green-color: #c1d6ce;
-  --emerge-blue-color: #b8ddf4;
-  --emerge-red-color: #ff0000;
+
+  --emerge-greenlight-color: #86E9B9;
+  --emerge-green-color: #23BE73;
+
+  --emerge-blue-color: #34AAEA;
+  --emerge-red-color: #CF5C36;
   --emerge-beige-color: #eae7e2;
   --emerge-beigelight-color: #faf9f6;
   --emerge-grey-color: #d4d4d4;
