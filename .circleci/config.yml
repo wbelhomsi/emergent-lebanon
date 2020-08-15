@@ -1,0 +1,25 @@
+version: 2.1
+
+jobs:
+  lint:
+    docker:
+      - image: circleci/node:12
+    working_directory: ~/frontend
+    steps:
+      - checkout:
+          path: ~/frontend
+      - run:
+          name: Path
+          command: pwd
+      - run:
+          name: Install dependencies
+          command: cd frontend && npm install
+      - run:
+          name: Linting
+          command: cd frontend && npm run lint
+
+workflows:
+  version: 2.1
+  Linting:
+    jobs:
+      - lint
